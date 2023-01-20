@@ -1,4 +1,4 @@
-# Trabajo Data Engineer 
+# Trabajo de Data Engineer 
 
 Buen dia equipo de analisis de datos en las siguientes lineas les dare una breve explicación del trabajo hecho, para la ejecución del 
 proyecto que me fue asignado, sin mas que decir les dejo los pasos que ejecuté para culminar con mi labor, gracias de antemano, Buen dia!
