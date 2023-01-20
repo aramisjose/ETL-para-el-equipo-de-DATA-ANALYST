@@ -12,5 +12,7 @@ Paso3 Creacion de la API: Se uso fastapi para crear la api y deta para cargar y 
 
 Podran hacer sus consultas en la esta api -->   https://qjw7fr.deta.dev/docs
 
+Link de un breve video donde les explico mi trabajo --> https://drive.google.com/drive/folders/1K6dOXFhSCWrjW0h68RXvCQvHtFjyPWaI?usp=sharing
+
 
 
