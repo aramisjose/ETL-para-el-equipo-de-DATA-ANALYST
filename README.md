@@ -10,3 +10,7 @@ consultas deseadas por el equipo de analisis de datos.
 
 Paso3 Creacion de la API: Se uso fastapi para la carga de los datos y deta como la nube que guardaria el proyecto realizado.
 
+Podran hacer sus consultas en la esta api -->   https://qjw7fr.deta.dev/docs
+
+
+
