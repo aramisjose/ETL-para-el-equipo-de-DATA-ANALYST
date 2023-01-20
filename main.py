@@ -1,11 +1,14 @@
 import pandas as pd
 from fastapi import FastAPI
 
-
+##Aqui abro el archivo csv ya limpio
 data = pd.read_csv('data_plataformas_movies.csv')
 
-
+##creo un objecto de la clase fastapi
 app = FastAPI()
+
+
+##Esta funcion retornara la cantidad de veces que aparece una keyword por plataforma
 
 @app.get("/Cantidad de veces que aparece una keyword en una plataforma por peliculas/series")
 def get_word_count(plataforma,keyword):
@@ -41,6 +44,9 @@ def get_word_count(plataforma,keyword):
     else:
         return 'No existe la plataforma que buscas en nuestra base de datos'
     
+    
+
+## Aquí la segunda función devuelve la cantidad de peliculas por plataforma con un puntaje mayor al que el usuario ingrese
 
 @app.get("/Cantidad de peliculas con un score mayor a que el usuario ingrese en un año determinado")
 def get_score_count(plataforma,puntaje:int,anio:int):
@@ -85,6 +91,9 @@ def get_score_count(plataforma,puntaje:int,anio:int):
         return 'No existe la plataforma que ingresaste en nuestra base de datos'
     
 
+    
+    
+## Esta función retorna la pelicula con mayor score según la plataforma que el usuario ingrese
 
 @app.get("/Segunda Pelicula con mayor score para una plataforma determinada")
 def get_second_score(plataforma):
@@ -120,6 +129,8 @@ def get_second_score(plataforma):
     else:
         return 'No existe la plataforma que ingresaste en nuestra base de datos'
     
+    
+##Esta funcion devuelve la pelicula que más duro según año y plataforma
 
 @app.get("/Pelicula que más duro segun el año y plataforma")
 def get_longest(plataforma,min:int,anio:int):
@@ -162,6 +173,9 @@ def get_longest(plataforma,min:int,anio:int):
         return titulo, tiempo, tipo_duracion
     else:
         return 'No existe la plataforma que ingresaste en nuestra base de datos'
+    
+
+##Esta función devuelve la cantidad de peliculas por rating que el usuario ingrese
 
 @app.get("/Cantidad de series y peliculas por rating")
 def get_rating_count(rating):
